@@ -1,1 +1,1 @@
-https://kubanocon.000webhostapp.com/
+https://crud-kuba-nocon.herokuapp.com/
