@@ -1,5 +1,5 @@
 <?php
-$conn = new mysqli('localhost','root','','librarya');
+$conn = new mysqli('remotemysql.com','Q5ce6IILxv','d8rRn6imdt','Q5ce6IILxv');
 
 $autor = $_POST['autor'];
 $tytul = $_POST['tytul'];
@@ -33,5 +33,5 @@ $sql_a_t = "INSERT INTO `lib_autor_tytul`(`id_autor_tytul`, `id_autor`, `id_tytu
 
 $query3 = mysqli_query($conn, $sql_a_t);
 }
-header('Location: index.php')
+header('Location: https://crud-kuba-nocon.herokuapp.com/')
 ?>
