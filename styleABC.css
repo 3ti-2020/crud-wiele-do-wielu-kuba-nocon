@@ -43,13 +43,13 @@ th{
     background-color: blue;
     padding: 2%;
     color: white;
-    font-size: 20px;
+    font-size: 13px;
     font-family: 'Oswald', sans-serif;
 }
 td{
     background-color: lightblue;
     padding: 2%;
-    font-size: 28px;
+    font-size: 20px;
     font-family: 'Oswald', sans-serif;
 }
 form{
