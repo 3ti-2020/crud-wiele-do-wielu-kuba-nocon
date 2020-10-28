@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+*{
+    margin: 0%;
+}
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: repeat(5,20%);
+    grid-template-areas:
+    "head"
+    "main"
+    "main"
+    "main"
+    "foot" ;
+}
+.head{
+    grid-area: head;
+    background-color: black;
+    animation: FADEIN 1s ease-out 0s 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main{
+    grid-area: main;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    background-color: black;
+    grid-area: foot;
+    animation: FADEIN 1s ease-out 0s 1;
+}
+table{
+    animation: slideInFromLeft 1s ease-out 0s 1;
+}
+th{
+    background-color: blue;
+    padding: 5%;
+    color: white;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+td{
+    background-color: lightblue;
+    padding: 5%;
+    font-size: 28px;
+    font-family: 'Oswald', sans-serif;
+}
+form{
+  font-family: 'Oswald', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+input{
+  margin: 2%;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-300%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes FADEIN {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

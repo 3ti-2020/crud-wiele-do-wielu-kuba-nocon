@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Kuba Nocoń</title>
+    <link rel="stylesheet" href="styleABC.css">
 </head>
 <body>
     <div class="container">
-    <div class="head"></div>
+    <div class="head">
+    <form action="insert.php" method="POST">
+    <input type="text" name="autor" id="autor" placeholder="autor">
+    <input type="text" name="tytul" id="tytul" placeholder="tytul">
+    <input type="submit" value="Dodaj">
+    </form>
+    </div>
     <div class="main">
 
         <?php
