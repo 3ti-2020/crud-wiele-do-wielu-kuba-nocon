@@ -35,6 +35,10 @@
     background-color: black;
     grid-area: foot;
     animation: FADEIN 1s ease-out 0s 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
 }
 table{
     animation: slideInFromLeft 1s ease-out 0s 1;
