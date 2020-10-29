@@ -38,7 +38,9 @@
         ?>
 
     </div>
-    <div class="footer"></div>
+    <div class="footer">
+        <h1 class="name">Kuba Nocoń gr.1 nr.8</h1>
+        </div>
 </div>
 </body>
 </html>
