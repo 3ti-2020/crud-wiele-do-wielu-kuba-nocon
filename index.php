@@ -24,13 +24,11 @@
 
         echo "<table>";
         echo ("<tr>
-//             <th>ID</th>
             <th>Autor</th>
             <th>Tytuł</th>
         </tr>");
         while($row = $result->fetch_assoc()){
             echo("<tr>");
-//             echo("<td>".$row['id_autor_tytul']."</td>");
             echo("<td>".$row['autor']."</td>");
             echo("<td>".$row['tytul']."</td>");
             echo("</tr>");
