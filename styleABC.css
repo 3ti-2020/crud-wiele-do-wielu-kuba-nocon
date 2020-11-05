@@ -90,8 +90,8 @@ input{
     }
   }
   .github-logo{
-    width: 5vw;
-    height: 5vw;
+    width: 100px;
+    height: 100px;
     position: absolute;
     top: 10px;
     left: 10px;
