@@ -23,6 +23,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
 }
 .main{
     grid-area: main;
@@ -87,4 +88,11 @@ input{
     100% {
       opacity: 1;
     }
+  }
+  .github-logo{
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    top: 10px;
+    left: 10px;
   }

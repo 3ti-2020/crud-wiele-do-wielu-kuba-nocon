@@ -9,6 +9,11 @@
 <body>
     <div class="container">
     <div class="head">
+    <a href="https://github.com/3ti-2020/crud-wiele-do-wielu-kuba-nocon">
+    <img class="github-logo" src="github.png" alt="github.com - odnośnik">
+    </a>
+
+
     <form action="insert.php" method="POST">
     <input type="text" name="autor" id="autor" placeholder="autor">
     <input type="text" name="tytul" id="tytul" placeholder="tytul">
