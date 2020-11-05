@@ -9,16 +9,23 @@
 <body>
     <div class="container">
     <div class="head">
+
+    <h1 class="name">Kuba Nocoń gr.1 nr.8</h1>
+
     <a class="github-logo" href="https://github.com/3ti-2020/crud-wiele-do-wielu-kuba-nocon">
     <img class="github-logo" src="github.png" alt="github.com - odnośnik">
     </a>
 
-
-    <form action="insert.php" method="POST">
-    <input type="text" name="autor" id="autor" placeholder="autor">
-    <input type="text" name="tytul" id="tytul" placeholder="tytul">
-    <input type="submit" value="Dodaj">
-    </form>
+    <nav>
+        <ul>
+          <li><a href="index.php">TABLE</a></li>
+          <li><a href="card.html">CARD</a></li>
+          <li><a href="#">SLIDER</a></li>
+          <li><a href="#">LOG IN</a></li>
+        </ul>
+      </nav>
+    
+    
     </div>
     <div class="main">
 
@@ -44,7 +51,12 @@
 
     </div>
     <div class="footer">
-        <h1 class="name">Kuba Nocoń gr.1 nr.8</h1>
+        
+        <form action="insert.php" method="POST">
+    <input type="text" name="autor" id="autor" placeholder="autor">
+    <input type="text" name="tytul" id="tytul" placeholder="tytul">
+    <input type="submit" value="Dodaj">
+    </form>
         </div>
 </div>
 </body>

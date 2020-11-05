@@ -22,8 +22,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     position: relative;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+.name{
+  color: white;
 }
 .main{
     grid-area: main;
@@ -31,6 +35,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Oswald', sans-serif;
 }
 .footer{
     background-color: black;
@@ -57,6 +62,7 @@ td{
     padding: 2%;
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
+    text-align: center;
 }
 form{
   font-family: 'Oswald', sans-serif;
@@ -95,4 +101,196 @@ input{
     position: absolute;
     top: 10px;
     left: 10px;
+  }
+  nav{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    border-bottom: 2px solid white;
+  }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 23px;
+  
+    position: relative;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 25px;
+  }
+  
+  nav a:hover {
+    color: pink;
+  }
+  
+  nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #444;
+  
+    position: absolute;
+    top: 0;
+    width: 0%;
+  
+    transition: all ease-in-out 250ms;
+  }
+  
+  nav a:hover::before {
+    width: 100%;
+  }
+
+
+  .card-cont{
+    width: 20%;
+    height: 95%;
+    border-radius: 2%;
+    box-shadow: 1px 1px 5px 5px;   
+    position: relative;
+}
+.title{
+    font-size: 1.5rem;
+    font-family: 'Oswald', sans-serif;
+}
+.bird-img{
+    height: 30%;
+    width: 30%;
+    left: 0%;
+    position: absolute;
+    --ml : 0px;
+    transform:  translate(var(--ml));
+    transition: 0.3s;
+}
+.cardB{
+    position: absolute;
+    display: none;
+    grid-template-columns: 1;
+    grid-template-rows: repeat(5,20%);
+    grid-template-areas:
+    "head"
+    "main"
+    "main"
+    "main"
+    "foot" ;
+    height: 57.5%;
+    width: 20%;
+    background-color: grey;
+    opacity: 90%;
+}
+.cardA{
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: repeat(5,20%);
+    grid-template-areas:
+    "head"
+    "main"
+    "main"
+    "main"
+    "foot" ;
+    height: 100%;
+    background-image: url("bg-card.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: width 2s, height 4s;
+}
+.head-card{
+    grid-area: head;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
+}
+.main-card{
+grid-area: main ;
+display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.foot-card{
+    grid-area: foot;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.btn {
+    background-color: grey;
+    border: none;
+    color: white;
+    padding: 5px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    border-radius: 5%;
+    font-family: 'Oswald', sans-serif;
+  }
+  .zamknij{
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 3px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5%;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+  }
+  .headerB-card{
+    grid-area: head;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.mainB-card{
+grid-area: main ;
+display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.footB-card{
+    grid-area: foot;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.text{
+    color: white;
+    font-size: 1rem;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    line-height: 140%;
+}
+@keyframes scale-in-bottom {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+    }
   }
