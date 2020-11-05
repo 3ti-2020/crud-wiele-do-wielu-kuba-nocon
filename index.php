@@ -9,7 +9,7 @@
 <body>
     <div class="container">
     <div class="head">
-    <a href="https://github.com/3ti-2020/crud-wiele-do-wielu-kuba-nocon">
+    <a class="github-logo" href="https://github.com/3ti-2020/crud-wiele-do-wielu-kuba-nocon">
     <img class="github-logo" src="github.png" alt="github.com - odnośnik">
     </a>
 
