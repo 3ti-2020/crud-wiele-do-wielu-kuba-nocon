@@ -36,6 +36,7 @@
     justify-content: center;
     align-items: center;
     font-family: 'Oswald', sans-serif;
+    flex-direction: column;
 }
 .footer{
     background-color: black;
@@ -293,4 +294,13 @@ display: flex;
       -webkit-transform-origin: 50% 100%;
               transform-origin: 50% 100%;
     }
+  }
+  button{
+    font-family: 'Oswald', sans-serif;
+  }
+  .zarejestrujForm{
+    display: none;
+  }
+  .oldAccount{
+    display: none;
   }

@@ -21,7 +21,7 @@
           <li><a href="index.php">TABLE</a></li>
           <li><a href="card.html">CARD</a></li>
           <li><a href="#">SLIDER</a></li>
-          <li><a href="#">LOG IN</a></li>
+          <li><a href="log.php">LOG IN</a></li>
         </ul>
       </nav>
     
@@ -52,11 +52,22 @@
     </div>
     <div class="footer">
         
-        <form action="insert.php" method="POST">
+    <?php
+          session_start();         
+                if(isset($_SESSION['zalogowano'])){
+                    ?>
+                        <form action="insert.php" method="POST">
     <input type="text" name="autor" id="autor" placeholder="autor">
     <input type="text" name="tytul" id="tytul" placeholder="tytul">
     <input type="submit" value="Dodaj">
     </form>
+                    <?php
+                }else{
+                    echo("Nie można edytować bazy danych, zaloguj się!");
+                }
+            ?>
+
+
         </div>
 </div>
 </body>
