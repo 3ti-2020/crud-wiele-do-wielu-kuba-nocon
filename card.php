@@ -21,7 +21,7 @@
         <ul>
           <li><a href="index.php">TABLE</a></li>
           <li><a href="card.php">CARD</a></li>
-          <li><a href="#">BOOKS</a></li>
+          <li><a href="books.php">BOOKS</a></li>
           <li><a href="log.php">LOG IN</a></li>
         </ul>
       </nav>
