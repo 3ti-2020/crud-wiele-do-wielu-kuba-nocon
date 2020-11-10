@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kuba Nocoń</title>
     <link rel="stylesheet" href="styleABC.css">
+    <link rel="shortcut icon" href="icon.png">
 </head>
 <body>
     <div class="container">
@@ -20,7 +21,7 @@
         <ul>
           <li><a href="index.php">TABLE</a></li>
           <li><a href="card.php">CARD</a></li>
-          <li><a href="#">SLIDER</a></li>
+          <li><a href="#">BOOKS</a></li>
           <li><a href="log.php">LOG IN</a></li>
         </ul>
       </nav>
