@@ -6,7 +6,7 @@
         // $conn = new mysqli("localhost", "root", "zaq1@WSX", "library");
         $conn = new mysqli('remotemysql.com','Q5ce6IILxv','d8rRn6imdt','Q5ce6IILxv');
 
-        $sql = "INSERT INTO users VALUES ('$user', '$haslo')";
+        $sql = "INSERT INTO users VALUES (NULL,'$user', '$haslo')";
 
         mysqli_query($conn, $sql);
 
