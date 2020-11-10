@@ -19,7 +19,7 @@
     <nav>
         <ul>
           <li><a href="index.php">TABLE</a></li>
-          <li><a href="card.html">CARD</a></li>
+          <li><a href="card.php">CARD</a></li>
           <li><a href="#">SLIDER</a></li>
           <li><a href="log.php">LOG IN</a></li>
         </ul>
