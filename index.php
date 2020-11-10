@@ -31,6 +31,7 @@
     <div class="main">
 
         <?php
+        session_start();  
         $conn = new mysqli('remotemysql.com','Q5ce6IILxv','d8rRn6imdt','Q5ce6IILxv');
 
         $result = $conn->query("SELECT id_autor_tytul, autor, tytul FROM lib_autor_tytul, lib_tytul, lib_autor WHERE lib_autor_tytul.id_autor=lib_autor.id_autor AND lib_autor_tytul.id_tytul=lib_tytul.id_tytul");
@@ -38,19 +39,26 @@
         echo "<table>";
         echo ("<tr>
             <th>Autor</th>
-            <th>Tytuł</th>
-            <th>Usuń</th>
-            </tr>");
+            <th>Tytuł</th>");
+            if(isset($_SESSION['zalogowano'])){   
+                echo("<th>Usuń</th>");
+            }
+            
+           echo("</tr>");
         while($row = $result->fetch_assoc()){
             echo("<tr>");
             echo("<td>".$row['autor']."</td>");
             echo("<td>".$row['tytul']."</td>");
-            echo("<td>
+            if(isset($_SESSION['zalogowano'])){
+                
+                echo("<td>
                     <form action='delete.php' method='POST'>
                         <input type='hidden' name='id' value='".$row['id_autor_tytul']."'>
                         <input type='submit' value='X'>
                     </form>
                 </td>");
+
+            }
             echo("</tr>");
         }
         echo "</table>";
@@ -60,8 +68,7 @@
     </div>
     <div class="footer">
         
-    <?php
-          session_start();         
+    <?php        
                 if(isset($_SESSION['zalogowano'])){
                     ?>
                         <form action="insert.php" method="POST">
