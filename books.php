@@ -31,6 +31,7 @@
     <div class="main">
 
     <?php
+    if(isset($_SESSION['zalogowano']) ){
     session_start();
         $conn = new mysqli('remotemysql.com','Q5ce6IILxv','d8rRn6imdt','Q5ce6IILxv');
 
@@ -38,7 +39,7 @@
 
         echo("<table class='table-book'>");
         while($row = $result->fetch_assoc()){
-            echo("<tr>");
+            echo("<tr class='tr-books'>");
             echo("<td>".$row['autor']." "."</td>");
             echo("<td>".$row['tytul']." "."</td>");
             echo("<td>
@@ -97,11 +98,16 @@
             echo("</tr>");
         }
         echo "</table>";
-
+    
         ?>
 
             </div>
         </div>
+        <?php
+}else{
+    echo("Aby zarządzać swoimi książkami proszę się zalogować!");
+}
+        ?>
     </div>
     <div class="footer">
         

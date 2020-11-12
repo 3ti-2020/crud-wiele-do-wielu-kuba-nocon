@@ -52,7 +52,7 @@
                 ?>  
                     <form action="uwierzytelnianie.php" method="get">
                         <input type="hidden" name="akcja" value="wyloguj">
-                        <input type="submit" value="wyloguj">
+                        <input type="submit" value="Wyloguj">
                     </form>
                 <?php
             }

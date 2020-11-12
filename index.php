@@ -40,7 +40,7 @@
         echo ("<tr class='tr-main'>
             <th class='th-main'>Autor</th>
             <th class='th-main'>Tytuł</th>");
-            if(isset($_SESSION['zalogowano'])){   
+            if(isset($_SESSION['zalogowano']) && $_SESSION['user']=='kuba'){   
                 echo("<th class='th-main'>Usuń</th>");
             }
             
@@ -49,7 +49,7 @@
             echo("<tr class='tr-main'>");
             echo("<td class='td-main'>".$row['autor']."</td>");
             echo("<td class='td-main'>".$row['tytul']."</td>");
-            if(isset($_SESSION['zalogowano'])){
+            if(isset($_SESSION['zalogowano']) && $_SESSION['user']=='kuba' ){
                 
                 echo("<td class='td-main'>
                     <form action='delete.php' method='POST'>
@@ -69,7 +69,7 @@
     <div class="footer">
         
     <?php        
-                if(isset($_SESSION['zalogowano'])){
+                if(isset($_SESSION['zalogowano']) && $_SESSION['user']=='kuba' ){
                     ?>
                         <form action="insert.php" method="POST">
     <input type="text" name="autor" id="autor" placeholder="autor">
@@ -78,7 +78,7 @@
     </form>
                     <?php
                 }else{
-                    echo("Nie można edytować bazy danych, zaloguj się!");
+                    echo("Nie masz uprawnień, lub nie jesteś zalogowany!");
                 }
             ?>
 
