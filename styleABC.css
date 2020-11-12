@@ -37,6 +37,7 @@
     align-items: center;
     font-family: 'Oswald', sans-serif;
     flex-direction: column;
+    position: relative;
 }
 .footer{
     background-color: black;
@@ -48,17 +49,17 @@
     font-family: 'Oswald', sans-serif;
     color: white;
 }
-table{
+.tabelka-main{
     animation: slideInFromLeft 1s ease-out 0s 1;
 }
-th{
+.th-main{
     background-color: blue;
     padding: 2%;
     color: white;
     font-size: 13px;
     font-family: 'Oswald', sans-serif;
 }
-td{
+.td-main{
     background-color: lightblue;
     padding: 2%;
     font-size: 20px;
@@ -304,3 +305,64 @@ display: flex;
   .oldAccount{
     display: none;
   }
+  .table-book{
+    background-color: grey;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 5%;
+  }
+  .btn-book{
+    font-size: 1rem;
+    color: tomato;
+    border-radius: 15%;
+  }
+  .btn-wypozyczone{
+    font-size: 1rem;
+    color: tomato;
+    border-radius: 15%;
+    margin: 2%;
+  }
+  .wypozyczanie{
+    position: absolute;
+    width: 30%;
+    height: 75%;
+    background-color: black;
+    opacity: 90%;
+    border-radius: 4%;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+  .zamknij{
+    margin: 2%;
+    background-color: tomato;
+    border-radius: 50%;
+  }
+  .text-books{
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+  }
+  .th-books{
+    background-color: red;
+    padding: 0%;
+    margin: 12%;
+  }
+  .td-books{
+    background-color: tomato;
+    padding: 0%;
+    margin: 12%;
+  }
+  .wyczysc{
+    position: absolute;
+    right: 1%;
+    bottom: 1%;
+  }
+  

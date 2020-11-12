@@ -36,22 +36,22 @@
 
         $result = $conn->query("SELECT id_autor_tytul, autor, tytul FROM lib_autor_tytul, lib_tytul, lib_autor WHERE lib_autor_tytul.id_autor=lib_autor.id_autor AND lib_autor_tytul.id_tytul=lib_tytul.id_tytul");
 
-        echo "<table>";
-        echo ("<tr>
-            <th>Autor</th>
-            <th>Tytuł</th>");
+        echo "<table class='tabelka-main'>";
+        echo ("<tr class='tr-main'>
+            <th class='th-main'>Autor</th>
+            <th class='th-main'>Tytuł</th>");
             if(isset($_SESSION['zalogowano'])){   
-                echo("<th>Usuń</th>");
+                echo("<th class='th-main'>Usuń</th>");
             }
             
            echo("</tr>");
         while($row = $result->fetch_assoc()){
-            echo("<tr>");
-            echo("<td>".$row['autor']."</td>");
-            echo("<td>".$row['tytul']."</td>");
+            echo("<tr class='tr-main'>");
+            echo("<td class='td-main'>".$row['autor']."</td>");
+            echo("<td class='td-main'>".$row['tytul']."</td>");
             if(isset($_SESSION['zalogowano'])){
                 
-                echo("<td>
+                echo("<td class='td-main'>
                     <form action='delete.php' method='POST'>
                         <input type='hidden' name='id' value='".$row['id_autor_tytul']."'>
                         <input type='submit' value='X'>
