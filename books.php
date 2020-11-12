@@ -31,8 +31,9 @@
     <div class="main">
 
     <?php
-    if(isset($_SESSION['zalogowano']) ){
+    
     session_start();
+    if(isset($_SESSION['zalogowano']) ){
         $conn = new mysqli('remotemysql.com','Q5ce6IILxv','d8rRn6imdt','Q5ce6IILxv');
 
         $result = $conn->query("SELECT id_autor_tytul, autor, tytul FROM lib_autor_tytul, lib_tytul, lib_autor WHERE lib_autor_tytul.id_autor=lib_autor.id_autor AND lib_autor_tytul.id_tytul=lib_tytul.id_tytul");
