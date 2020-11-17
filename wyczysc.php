@@ -4,7 +4,7 @@
 
     $user = $_SESSION['user'];
 
-  $sql = "DELETE FROM `wypozyczenia` WHERE `user`='$user'";
+  $sql = "DELETE FROM `wypozyczenia` WHERE `user`='$user' AND data_zwrot NOT LIKE 'NULL'";
 
   mysqli_query($conn,$sql);
   
