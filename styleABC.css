@@ -38,6 +38,7 @@
     font-family: 'Oswald', sans-serif;
     flex-direction: column;
     position: relative;
+    overflow: auto;
 }
 .footer{
     background-color: black;
@@ -184,7 +185,7 @@ input{
     "main"
     "main"
     "foot" ;
-    height: 57.5%;
+    height: 95.5%;
     width: 20%;
     background-color: grey;
     opacity: 90%;
@@ -365,4 +366,13 @@ display: flex;
     right: 1%;
     bottom: 1%;
   }
-  
+  @media only screen and (max-width:768px){
+    nav{
+      display: flex;
+      flex-direction: column;
+      margin-left: 70px;
+      padding-top: 23px;
+    
+      position: relative;
+    }
+  }

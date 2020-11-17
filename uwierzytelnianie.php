@@ -7,6 +7,7 @@ session_start();
         $conn = new mysqli('remotemysql.com','Q5ce6IILxv','d8rRn6imdt','Q5ce6IILxv');
 
         $_SESSION['user'] = $_POST['user'];
+        $_SESSION['password'] = $_POST['haslo'];
         $result = $conn -> query("SELECT * FROM users");
         while($row=$result->fetch_assoc()){
             echo($row['login']." ".$row['password']);
